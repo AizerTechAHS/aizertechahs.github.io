@@ -4,6 +4,7 @@
 	--main-background: #0b0c0f;
 	--main-fonts-color: #f7f7f7;
 	--main-decor-color:#e00000;
+	--main-header-tab-color:#0dfc05;
     --main-header-background:#21252e;
 	--main-font-family: 'Poppins', sans-serif;
 }
@@ -245,11 +246,11 @@ a.nav-link{
 }
 
 .card .work-content:hover{
-    color:#202020;
+    color:#0dfc05;
 }
 
 .card:hover{
-	box-shadow: 0 0 1.5rem #438384;
+	box-shadow: 0 0 1.5rem #0dfc05;
 }
 
 /*──────────────────
