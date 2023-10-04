@@ -2,11 +2,10 @@
 
 :root{
 	--main-background: #0b0c0f;
-	--main-fonts-color: #f7f7f7;
-	--main-decor-color:#e00000;
-	--main-header-tab-color:#0dfc05;
-	--main-header-background:#21252e;
-	--main-decor-tab-background:#274a23;
+	--main-fonts-color: #22ff00;
+	--main-decor-color:#377172;
+	--main-tab-bar-color:#3a3b3a;
+    	--main-header-background:#000000;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -95,7 +94,7 @@ a.nav-link{
 }
 
 #home .filter{
-	background: url('teamSiteLogo.gif') no-repeat;
+	background: url('SiteLogo.gif') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
@@ -224,7 +223,7 @@ a.nav-link{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-    background:var(--main-decor-tab-background);
+    background:var(--main-decor-color);
 }
 
 .card img{
@@ -247,11 +246,98 @@ a.nav-link{
 }
 
 .card .work-content:hover{
-    color:#0dfc05;
+    color:#202020;
 }
 
 .card:hover{
-	box-shadow: 0 0 1.5rem #0dfc05;
+	box-shadow: 0 0 1.5rem #438384;
+}
+
+/*──────────────────
+      AskIt
+──────────────────*/
+
+#AskIt{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#AskIt h3{
+    padding-top: 70px;
+}
+#AskIt p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+#AskIt2{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#AskIt2 h3{
+    padding-top: 70px;
+}
+#AskIt2 p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+.work{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+    background:var(--main-tab-bar-color);
+}
+
+.card img{
+	width: 100%;
+	height:70%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card .work-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.card a{
+	text-decoration: none;
+}
+
+.card .work-content:hover{
+    color:#202020;
+}
+
+.card:hover{
+	box-shadow: 0 0 1.5rem #438384;
 }
 
 /*──────────────────
@@ -434,4 +520,91 @@ hr {
 
 .nav-active{
 	transform:translatex(0%);
+}
+
+/*──────────────────
+      Our Team
+──────────────────*/
+
+#Team{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#Team h3{
+    padding-top: 70px;
+}
+#Team p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+#Team2{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#Team2 h3{
+    padding-top: 70px;
+}
+#Team2 p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+.work{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+    background:var(--main-tab-bar-color);
+}
+
+.card img{
+	width: 100%;
+	height:70%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card .work-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.card a{
+	text-decoration: none;
+}
+
+.card .work-content:hover{
+    color:#ef0000;
+}
+
+.card:hover{
+	box-shadow: 0 0 1.5rem #0c64df;
 }
