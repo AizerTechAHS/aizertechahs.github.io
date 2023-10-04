@@ -6,6 +6,7 @@
 	--main-decor-color:#e00000;
 	--main-header-tab-color:#0dfc05;
 	--main-header-background:#21252e;
+	--main-decor-tab-background:#20c20e;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -223,7 +224,7 @@ a.nav-link{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-    background:var(--main-decor-color);
+    background:var(--main-decor-tab-background);
 }
 
 .card img{
