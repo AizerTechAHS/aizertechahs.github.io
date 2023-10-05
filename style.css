@@ -608,3 +608,41 @@ hr {
 .card:hover{
 	box-shadow: 0 0 1.5rem #0c64df;
 }
+
+/*────────────────── 
+     NeedHelp
+──────────────────*/
+.NeedHelp {
+	display: none;
+}
+
+.NeedHelp div{
+	width: 30px;
+	height: 3px;
+	background: #ff009d;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translatex(50px);
+	}
+	to{
+		opacity: 1;
+		transform:translatex(0px);
+	}
+}
