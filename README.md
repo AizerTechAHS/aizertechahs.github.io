@@ -18,3 +18,6 @@ Dont change too much code tho
 The developers of that code took their time doing it and it would be disrespectful to just enter the file
 and change it.
 </center>
+<h3>Money Rights</h3>
+<br>
+<p>Money will get split between /6</p>
