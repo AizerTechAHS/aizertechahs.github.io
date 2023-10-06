@@ -35,3 +35,35 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+<!--SearchBar-->
+	
+function getReceipes() {
+  return document.getElementsByClassName('recipe');
+}
+
+function randomDiv() {
+  var receipes = getReceipes();
+
+  return receipes[Math.floor(Math.random() * receipes.length)];
+}
+  
+// randomDiv().style.display="inline-block";
+
+document.getElementById('search').addEventListener('keyup', function(e) {
+  var searchText = this.value;
+
+  Array.from(getReceipes()).forEach(function(recipe) {
+    if (searchText.length === 0) {
+       recipe.style.display = 'none';
+    } else {
+      var nameElement = recipe.getElementsByTagName('h2')[0];
+    
+      if (nameElement && nameElement.innerText.indexOf(searchText) > -1) {
+        recipe.style.display = 'inline-block';
+      } else {
+        recipe.style.display = 'none';
+      }
+    }
+  });
+});
