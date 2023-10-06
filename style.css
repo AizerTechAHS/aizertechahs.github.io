@@ -646,3 +646,8 @@ hr {
 		transform:translatex(0px);
 	}
 }
+
+<!--SearchBar-->
+.recipe {
+ display:none;
+}
