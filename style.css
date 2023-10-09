@@ -688,7 +688,7 @@ hr {
 	font-size:1.2rem;
 	padding: 10px;
 }
-.work{
+.fnfwork{
 	display: flex; 
 	flex: 1;
     flex-wrap: wrap;
@@ -697,7 +697,7 @@ hr {
 	padding: 20px;
 }
 
-.card{
+.fnfcard{
 	display: flex;
 	flex-direction: column;
 	margin: 20px;
@@ -707,7 +707,7 @@ hr {
     background:var(--main-decor-color);
 }
 
-.card .work-content{
+.fnfcard .work-content{
 	text-align: center;
 	padding: 10px 5px;
 	font-size: 1rem;
@@ -716,14 +716,14 @@ hr {
 	cursor: pointer;
 }
 
-.card a{
+.fnfcard a{
 	text-decoration: none;
 }
 
-.card .work-content:hover{
+.fnfcard .work-content:hover{
     color:#202020;
 }
 
-.card:hover{
+.fnfcard:hover{
 	box-shadow: 0 0 1.5rem #438384;
 }
