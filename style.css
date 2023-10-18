@@ -646,3 +646,19 @@ hr {
 .card:hover{
 	box-shadow: 0 0 1.5rem #438384;
 }
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 70px;
+}
