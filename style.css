@@ -646,3 +646,45 @@ hr {
 .card:hover{
 	box-shadow: 0 0 1.5rem #438384;
 }
+
+/*──────────────────
+      Prices
+──────────────────*/
+
+#Prices{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#Prices h3{
+    padding-top: 70px;
+}
+#Prices p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+#Prices2{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#Prices2 h3{
+    padding-top: 70px;
+}
+#Prices2 p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
