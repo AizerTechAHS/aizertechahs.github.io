@@ -185,17 +185,15 @@ function OpenaiFetchAPI(PROMPT, model, key) {
 <h2>The Question:</h2>
   <textarea id="aiinput" style="width:600px; height:300px;" value="Text here"></textarea>
   <br>
-  <button type="button" onclick="OpenaiFetchAPI(PROMPT = (document.getElementById('aiinput').value), model = String(document.getElementById('models').value), key = String(document.getElementById('keyinput').value));">Click Me!</button>
-<p>The response:</p>
-
-
-<p id="airesponse"> Response will generate here. </p>
-			  
 <div>
         <ul class="nav-bar"><div class="bg"></div>
 			<li><a class="nav-link" onclick="OpenaiFetchAPI(PROMPT = (document.getElementById('aiinput').value), model = String(document.getElementById('models').value), key = String(document.getElementById('keyinput').value));">Click Me</a></li>
 		 </ul>
 		  </div>
+<p>The response:</p>
+
+
+<p id="airesponse"> Response will generate here. </p>
 		  </div>
 </body>
 </html>
