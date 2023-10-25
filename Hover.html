@@ -1,10 +1,28 @@
-<button class="hoverable-button">Hover Me!</button>
-<p class="display-on-hover">Hello! This is displayed on hover.</p>
+<table>
+  <tr>
+    <div class="button">
+      <a href="#"></a>
+    </div>
+    <td><img src="/app/images/todo/todos_incomplete_blue.svg" /></td>
+    <td>Make a To Do List</td>
+    <td>Me Myself and I</td>
+    <td>Whenever I want</td>
+    <td>69%</td>
+    <td>
+      <div class="button">
+        <img src="/app/images/master/actions_btn.svg" />
+        <a href="#"></a>
+      </div>
+    </td>
+  </tr>
+</table>
 <script>
-  .hoverable-button:hover + .display-on-hover {
-  display: block;
+  .button {
+  opacity: 0;
 }
-.display-on-hover {
-  display: none;
+
+.button:hover {
+  display: inline-block;
+  opacity: 1;
 }
 </script>
