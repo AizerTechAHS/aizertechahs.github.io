@@ -688,3 +688,52 @@ hr {
 	font-size:1.2rem;
 	padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+      /*p */
+
+      .dropdown {
+         position: absolute;
+         display: block;
+      }
+
+      /* s */
+
+      .button {
+         background: gray;
+         padding: 10px 22px;
+         font-size: 15px;
+         border: none;
+      }
+
+      .button:hover {
+         background: rgb(240, 144, 144);
+      }
+
+      /* p */
+
+      #list-items {
+         display: none;
+         position: relative;
+         background-color: white;
+         width: 156.5px;
+      }
+
+      /* p */
+
+      #list-items a {
+         display: block;
+         font-size: 15px;
+         background-color: rgb(240, 144, 144);
+         color: black;
+         text-decoration: none;
+         padding: 10px;
+         text-align: center;
+      }
