@@ -80,35 +80,6 @@ a.nav-link{
 }
 
 /*──────────────────
-    social media
-──────────────────*/
-
-.social-media{
-	padding: 10px;
-	display: flex;
-	position: center;
-    align-items: space-around;
-	justify-content:center;
-}
-
-.social-media a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align:center;
-    display: inline-block;
-	color: var(--main-fonts-color);
-}
-
-.social-media a i{
-	cursor: pointer;
-}
-
-.social-media  a:hover {
-	color: var(--main-decor-color);
-	text-shadow: 0 0 50px var(--main-decor-color);
-}
-
-/*──────────────────
       projects
 ──────────────────*/
 
@@ -380,10 +351,10 @@ hr {
 }
 
 /*──────────────────
-      Our Team
+      Action
 ──────────────────*/
 
-#Team{
+#Action{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -393,16 +364,16 @@ hr {
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#Team h3{
+#Action h3{
     padding-top: 70px;
 }
-#Team p{
+#Action p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
 }
 
-#Team2{
+#Action2{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -412,223 +383,12 @@ hr {
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#Team2 h3{
+#Action2 h3{
     padding-top: 70px;
 }
-#Team2 p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
-}
-.work{
-	display: flex; 
-	flex: 1;
-    flex-wrap: wrap;
-    justify-content:center;
-	align-items: center;
-	padding: 20px;
-}
-
-.card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-tab-bar-color);
-}
-
-.card img{
-	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
-}
-
-.card .work-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
-}
-
-.card a{
-	text-decoration: none;
-}
-
-.card .work-content:hover{
-    color:#ef0000;
-}
-
-.card:hover{
-	box-shadow: 0 0 1.5rem #0c64df;
-}
-
-/*────────────────── 
-     NeedHelp
-──────────────────*/
-.NeedHelp {
-	display: none;
-}
-
-.NeedHelp div{
-	width: 30px;
-	height: 3px;
-	background: #ff009d;
-	margin: 5px;
-	transition:all 0.3s ease;
-}
-
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2{
-	opacity: 0;
-}
-
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity:0;
-		transform: translatex(50px);
-	}
-	to{
-		opacity: 1;
-		transform:translatex(0px);
-	}
-}
-
-/*──────────────────
-      FNF
-──────────────────*/
-
-#fnf{
-	margin-top:100px;
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
-}
-#fnf h3{
-    padding-top: 70px;
-}
-#fnf p{
+#Action2 p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
 }
 
-#fnf2{
-	margin-top:100px;
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
-}
-#fnf2 h3{
-    padding-top: 70px;
-}
-#fnf2 p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
-}
-.work{
-	display: flex; 
-	flex: 1;
-    flex-wrap: wrap;
-    justify-content:center;
-	align-items: center;
-	padding: 20px;
-}
-
-.card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-decor-color);
-}
-
-.card img{
-	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
-}
-
-.card .work-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
-}
-
-.card a{
-	text-decoration: none;
-}
-
-.card .work-content:hover{
-    color:#202020;
-}
-
-.card:hover{
-	box-shadow: 0 0 1.5rem #438384;
-}
-
-/*──────────────────
-      Prices
-──────────────────*/
-
-#Prices{
-	margin-top:100px;
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
-}
-#Prices h3{
-    padding-top: 70px;
-}
-#Prices p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
-}
-
-#Prices2{
-	margin-top:100px;
-    height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
-}
-#Prices2 h3{
-    padding-top: 70px;
-}
-#Prices2 p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
-}
