@@ -1,0 +1,92 @@
+        <a class="btn btn-primary me-2" role="button" onclick="openWind();">Launch app</a>
+
+<script>
+var tries = 3;
+function checkTok(){
+    var toks = ["all your access tokens are belong to me"];
+    var inp = $("#tokinp");
+
+    if(toks.includes(inp.val())){
+        var modal = document.getElementById("myModal");
+
+modal.style.display = "none";
+        var notification = 
+        alertify.alert('Welcome!', "Welcome to the newest generation of GGG, GoodbyeGoGuardian V5.0. This version contains many app updates, new features, games, a customizable launch sequence, and the new, better than ever, bookmarklets! To see the docs, take a peek <a href='https://docs.google.com/document/d/1fW3TSyETE6jbSd_d_YfDtJcb743v6f7aeNeV3VIfT5w/edit'>here</a>.", function(){alertify.notify('Authorized!', 'success', 5, function(){  console.log('dismissed');
+// DON'T DELETE THIS!
+window.onbeforeunload=function() {return false;}
+// Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page 
+});});
+
+        
+    } else {
+        tries--;
+        alertify.alert('Authorization Failed', "You have entered the incorrect token. Please try again.", function(){if(tries == 0){
+            window.close();
+        }});
+        
+        
+
+    }
+}
+
+            function openWind() {
+                if ($('#activityCloak').is(':checked')) {
+
+                    var url = $("#cloakurl").val() || "http://classroom.google.com";
+                    var clasroomwindow = window.open(url, "ActivityCloakWindow");
+                }
+                
+                
+                var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
+
+                var xmlhttp;
+                if (window.XMLHttpRequest) {
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for older browsers
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        ggwindow.document.write(this.responseText);
+                        if ($('#selfDestruct').is(':checked')) {
+                          window.close();  window.onbeforeunload=function() {};
+                            
+                            
+                        }
+                    }
+                };
+                xmlhttp.open("GET", "https://aizertechahs.github.io/Base/Game/1V1LOL.html", true);
+                xmlhttp.send();
+                
+            }
+
+
+            document.onkeyup = function(e) {
+            if (e.ctrlKey && e.which == 76) {
+                document.rootElement.innerHTML=document.rootElement.innerHTML+'<a href="https://aizertechahs.github.io/PROXY/freeweb.html">debug</a>';
+            }
+            }
+
+            function mainLoop() {
+                setTimeout(function() {
+
+                    // Tab Cloak
+                    if($('#tabCloak').is(':checked')){
+                        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive - Google Drive';document.getElementsByTagName('head')[0].appendChild(link);;
+                    } else {
+                       var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://aizertechahs.github.io/PROXY/favicon-16x16.png';document.title = 'Goodbye, GoGuardian!';document.getElementsByTagName('head')[0].appendChild(link);;
+                    }
+                    
+            }, 50);
+            }
+
+
+            document.onload = mainLoop;
+var modal = document.getElementById("myModal");
+
+modal.style.display = "block";
+
+ 
+            
+</script>
