@@ -89,6 +89,7 @@
 <a class="btn btn-primary me-2" role="button" onclick="openWind();">Launch app</a>
 
         <script>
+		
             var tries = 3;
 function checkTok(){
     var toks = ["all your access tokens are belong to me"];
@@ -98,7 +99,8 @@ function checkTok(){
         var modal = document.getElementById("myModal");
 
 modal.style.display = "none";
-
+        var notification = 
+        alertify.alert('Welcome!', "Welcome to the newest generation of GGG, GoodbyeGoGuardian V5.0. This version contains many app updates, new features, games, a customizable launch sequence, and the new, better than ever, bookmarklets! To see the docs, take a peek <a href='https://docs.google.com/document/d/1fW3TSyETE6jbSd_d_YfDtJcb743v6f7aeNeV3VIfT5w/edit'>here</a>.", function(){alertify.notify('Authorized!', 'success', 5, function(){  console.log('dismissed');
 // DON'T DELETE THIS!
 window.onbeforeunload=function() {return false;}
 // Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page 
@@ -143,9 +145,16 @@ window.onbeforeunload=function() {return false;}
                         }
                     }
                 };
-                xmlhttp.open("GET", "https://aizertechahs.github.io/Base/Game/1V1LOL.html", true);
+                xmlhttp.open("GET", "https://rainestorme.github.io/GoodbyeGoGuardian/app.html", true);
                 xmlhttp.send();
                 
+            }
+
+
+            document.onkeyup = function(e) {
+            if (e.ctrlKey && e.which == 76) {
+                document.rootElement.innerHTML=document.rootElement.innerHTML+'<a href="https://rainestorme.github.io/GoodbyeGoGuardian/freeweb.html">debug</a>';
+            }
             }
 
             function mainLoop() {
@@ -168,8 +177,8 @@ var modal = document.getElementById("myModal");
 modal.style.display = "block";
 
  
-            
-</script>
+ 
+	</script>
     <div id="debug">
         
     </div>
