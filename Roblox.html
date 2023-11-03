@@ -332,29 +332,12 @@
           return macIntelKeyword.indexOf(navigator.platform) !== -1;
         };
         var allOsNames = {
-          mac: "mac",
-          window: "window",
-          ios: "ios",
-          android: "android",
           chrome_os: "chrome_os",
-          unix: "unix",
-          beos: "beos",
-          amigaos: "amigaos",
-          linux: "linux"
         };
         var isMobileComputed;
         var isMobile = function isMobile() {
           if (typeof isMobileComputed === "undefined") {
             var toMatch = [
-              /Android/i,
-              /webOS/i,
-              /iPhone/i,
-              /iPad/i,
-              /iPod/i,
-              /BlackBerry/i,
-              /Windows Phone/i,
-              /Opera Mini/i,
-              /IEMobile/i,
               /WPDesktop/i
             ];
             isMobileComputed = toMatch.some(function (toMatchItem) {
@@ -397,53 +380,8 @@
         var isAmigaOS = function isAmigaOS() {
           return /AmigaOS/.test(navigator.userAgent);
         };
-        var isTablet = function isTablet() {
-          var userAgent = navigator.userAgent.toLowerCase();
-          var tablet =
-            /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(
-              userAgent
-            );
-          return tablet;
-        };
-        var isTV = function isTV() {
-          try {
-            var userAgent = navigator.userAgent.toLowerCase();
-            var tvKeywords = [
-              "smarttv",
-              "googletv",
-              "appletv",
-              "hbbtv",
-              "netcast",
-              "webos",
-              "tizen",
-              "viera",
-              "roku",
-              "firetv"
-            ];
-
-            // eslint-disable-next-line no-plusplus
-            for (var i = 0; i < tvKeywords.length; ++i) {
-              if (userAgent.indexOf(tvKeywords[i]) > -1) {
-                return true;
-              }
-            }
-            if (
-              !(isMobile() || isIPad() || isTablet()) &&
-              userAgent.indexOf("jiopages") > -1
-            ) {
-              return true;
-            }
-            return false;
-          } catch (e) {
-            return false;
-          }
-        };
         var getOS = function getOS() {
           var userPlatform = window.navigator.platform;
-          var macosPlatforms = ["Macintosh", macIntelKeyword, "MacPPC", "Mac68K"];
-          var windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"];
-          var iosPlatforms = ["iPhone", "iPad", "iPod"];
-          var androidPlatforms = ["Android", "Linux"];
           var os = "other";
           if (iosPlatforms.indexOf(userPlatform) !== -1) {
             os = allOsNames.ios;
@@ -469,13 +407,7 @@
         };
         var getFeDeviceDetails = function getFeDeviceDetails() {
           var desktopSpecificOSNames = [
-            allOsNames.mac,
-            allOsNames.window,
             allOsNames.chrome_os,
-            allOsNames.unix,
-            allOsNames.beos,
-            allOsNames.amigaos,
-            allOsNames.linux
           ];
           var feDeviceType = "other";
           var feOsName = getOS();
