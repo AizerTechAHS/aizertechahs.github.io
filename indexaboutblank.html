@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<script>
+</script>
+
+<html>
+  <head>
+      <meta charset="utf-8">
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9680897720849446"
+     crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/d08ce418ca.js" crossorigin="anonymous"></script>
+      <link rel="icon" href="Images/teamSiteLogo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  <script src="https://apis.google.com/js/platform.js" async defer></script>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>Aizer Tech Main Site<hr></h3>
+       <br> 
+       <h3>Made by Bypassers (Github Team)</h3>
+		  <p></p>
+		<p>More Games Coming Soon!!!<br>One of the many AizerTech sites <br> Join Our Chat Down Below :))</p>
+
+			 <p><b>https://aizertechahs.zulipchat.com/join/avag2ycofsk4xxn7ohj6jawt/</b></p>
+          
+       
+	<!--──────────────Contact────────────────-->
+		  <div class="social-media">
+			  
+			  <a href="SocialMedia/Discord.html" target="_blank"><i class='fab fa-discord'></i></a>
+			  <a href="SocialMedia/Github.html" target="_blank"><i class='fab fa-github'></i></a>
+			  <a onclick="WhatsappAlert()"><i class="fa-brands fa-whatsapp"></i>
+			  <a href="https://www.youtube.com/@AizerTechBypasserTeam" target="_blank"><i class="fab fa-youtube"></i></a>				  
+    
+</div>
+  </section>
+	  </div>
+
+
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>Unblocked Games<hr></h3>
+		  <div class="work-box">
+		  <div class="work">
+<p>Want to play unblocked games?<br> We are adding new games every day in order to keep it fun and interesting. If you see the same game more than twice.. (which you probably will) it means were not done yet. 
+<br> The game you will see alot is "Bikini Bottom"..just ignore it..were adding code to those buttons, their just there to keep it full. 
+</p>
+			  <br>
+        <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" target="_blank" href="GameBox.html">Unblocked Games</a></li>
+		 </ul>
+		  </div>
+		  </div>
+	  <!--───────────────SecretLink───────────────-->
+		  	  <div id="Secret"> 
+				  <h3>Secret</h3>
+				  <p>This is a BETA page so it doesn't work completely, and i will update here until its done. <br><b> 
+				  UPDATE: Not Finished (2% Done)</b></p>
+				<ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" target="_blank" href="indexbk.html">About:Blank</a></li>
+		 </ul>
+			  </div>
+	  <!--───────────────Prices───────────────-->
+	  <div id="Prices"> 
+		 <h3>Proxy<hr></h3>
+		  <p>Contact the Leader Of Support at francisco.teneria@students.annaisd.org </p>
+		  <p>Please stop using proxy's on our site that you didn't pay for. <br> Those proxy's were paid for and aren't meant for random people to use</p>
+		  <h4>IF YOU WANT A PROXY ; EMAIL THE SUPPORT LEADER TO GET ONE</h4>
+	  </div>
+
+		<html>
+<body>
+	  <!--───────────────AI───────────────-->
+		  <div id="Team"> 
+<script>
+function OpenaiFetchAPI(PROMPT, model, key) {
+    alert("Calling Legacy Model");
+    var url = "https://api.openai.com/v1/completions";
+    var bearer = 'Bearer ' + key;
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': bearer,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "model": model,
+            "prompt": PROMPT,
+            "temperature": 0.7,
+            "max_tokens": 256,
+            "top_p": 1,
+            "frequency_penalty": 0,
+            "presence_penalty": 0
+        })
+
+
+    }).then(response => {
+        
+        return response.json()
+       
+    }).then(data=>{
+        console.log(data)
+        console.log(typeof data)
+        console.log(Object.keys(data))
+        document.getElementById('airesponse').innerText = data['choices'][0].text
+        alert(data['choices'][0].text)
+
+        
+    })
+        .catch(error => {
+            alert('Something bad happened ' + error)
+        });
+
+}; 
+
+
+
+</script>
+
+
+		 <div class="filter"></div>
+		  <h3>OpenAI<hr></h3>
+
+<select id="models" class="dropdown">
+    <option value="text-davinci-003">Davinci-3 (Default & most capable)</option>
+</select>
+
+<h2>Key:</h2>
+<input id="keyinput" type="password" value=""></input>
+
+<h2>The Question:</h2>
+  <textarea id="aiinput" style="width:600px; height:100px;" value="Text here"></textarea>
+  <br>
+<div>
+        <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" onclick="OpenaiFetchAPI(PROMPT = (document.getElementById('aiinput').value), model = String(document.getElementById('models').value), key = String(document.getElementById('keyinput').value));">Click Me</a></li>
+		 </ul>
+		  </div>
+<p>The response:</p>
+
+
+<p id="airesponse"> Response will generate here. </p>
+		  </div>
+</body>
+</html>
+	  <!--───────────────FNF───────────────-->
+	  <div id="fnf"> 
+		 <h3>Friday Night Funkin'<hr></h3>
+		  <p>For people who enjoy FNF</p>
+		  <div class="work-box">
+		  <div class="work">
+        <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" target="_blank" href="FNFMods.html">Take me there</a></li>
+		 </ul>
+		  </div>
+	  </div>
+
+		
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>Feel free to contact me on my social media.</p>
+		    <div class="social-media">
+			  <a href="SocialMedia/Discord.html" target="_blank"><i class='fab fa-discord'></i></a>
+			  
+			  <a href="SocialMedia/Github.html" target="_blank"><i class='fab fa-github'></i></a>
+			  
+			  <a href="https://www.youtube.com/@AizerTechBypasserTeam" target="_blank"><i class="fab fa-youtube"></i></a>
+
+			  <a onclick="WhatsappAlert()"><i class="fa-brands fa-whatsapp"></i>
+		    </div>
+      <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" href="contact.html">More Options</a></li>
+		 </ul>
+		  </div>
+
+	</main>
+	  <footer class="copyright">
+		  <a href="https://replit.com">My Replit</a>
+     </footer>
+	  
+  </div>
+  </body>
+</html>
+
+
+		<!--───────────JAVASCRIPT_ALERTS───────────-->
+<script>
+function WhatsappAlert() {
+  alert("Follow us on whatsapp at https://whatsapp.com/channel/0029Va7U88I8PgsCkNlDxf3l");
+}
+</script>
+	<script>
+		// DON'T DELETE THIS!
+            window.onbeforeunload=function() {return false;} // Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page
+	</script>
+
+<!--Chat HTML is below-->
+<body><div class="pubble-app" data-app-id="122466" data-app-identifier="122466"></div>
+	<script type="text/javascript" src="https://cdn.chatify.com/javascript/loader.js" defer></script></body>
