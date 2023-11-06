@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyInstants AizerTechAHS</title>
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://rainestorme.github.io/GoodbyeGoGuardian/css/mdb.dark.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+	<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+	<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+	</script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js">
+	</script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+	</script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js">
+	</script>
+<style>
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+    color:#000000;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<center>
+<a class="nav-link" role="button" onclick="openWind();">Launch app</a>
+</center>
+        <script>
+		
+            var tries = 3;
+function checkTok(){
+    var toks = ["all your access tokens are belong to me"];
+    var inp = $("#tokinp");
+
+    if(toks.includes(inp.val())){
+        var modal = document.getElementById("myModal");
+
+modal.style.display = "none";
+        var notification = 
+        alertify.alert('Welcome!', "Welcome to the newest generation of GGG, GoodbyeGoGuardian V5.0. This version contains many app updates, new features, games, a customizable launch sequence, and the new, better than ever, bookmarklets! To see the docs, take a peek <a href='https://docs.google.com/document/d/1fW3TSyETE6jbSd_d_YfDtJcb743v6f7aeNeV3VIfT5w/edit'>here</a>.", function(){alertify.notify('Authorized!', 'success', 5, function(){  console.log('dismissed');
+// DON'T DELETE THIS!
+window.onbeforeunload=function() {return false;}
+// Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page 
+});});
+
+        
+    } else {
+        tries--;
+        alertify.alert('Authorization Failed', "You have entered the incorrect token. Please try again.", function(){if(tries == 0){
+            window.close();
+        }});
+        
+        
+
+    }
+}
+
+            function openWind() {
+                if ($('#activityCloak').is(':checked')) {
+
+                    var url = $("#cloakurl").val() || "http://classroom.google.com";
+                    var clasroomwindow = window.open(url, "ActivityCloakWindow");
+                }
+                
+                
+                var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
+
+                var xmlhttp;
+                if (window.XMLHttpRequest) {
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for older browsers
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        ggwindow.document.write(this.responseText);
+                        if ($('#selfDestruct').is(':checked')) {
+                          window.close();  window.onbeforeunload=function() {};
+                            
+                            
+                        }
+                    }
+                };
+                xmlhttp.open("GET", "https://aizertechahs.github.io/Base/Game/AboutBlank/MyInstants.html", true);
+                xmlhttp.send();
+                
+            }
+
+
+            document.onkeyup = function(e) {
+            if (e.ctrlKey && e.which == 76) {
+                document.rootElement.innerHTML=document.rootElement.innerHTML+'<a href="https://rainestorme.github.io/GoodbyeGoGuardian/freeweb.html">debug</a>';
+            }
+            }
+
+            function mainLoop() {
+                setTimeout(function() {
+
+                    // Tab Cloak
+                    if($('#tabCloak').is(':checked')){
+                        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive - Google Drive';document.getElementsByTagName('head')[0].appendChild(link);;
+                    } else {
+                       var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://rainestorme.github.io/GoodbyeGoGuardian/favicon-16x16.png';document.title = 'Goodbye, GoGuardian!';document.getElementsByTagName('head')[0].appendChild(link);;
+                    }
+                    
+            }, 50);
+            }
+
+
+            document.onload = mainLoop;
+var modal = document.getElementById("myModal");
+
+modal.style.display = "block";
+
+ 
+ 
+	</script>
+    <div id="debug">
+        
+    </div>
+    </body>
+</html>
