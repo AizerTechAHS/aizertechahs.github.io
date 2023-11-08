@@ -249,6 +249,12 @@ a.nav-link{
     color:#202020;
 }
 
+.Sponsor img{
+	width: 50%;
+	height:40%;
+	border-radius:10px 10px 0px 0px;
+}
+
 .card:hover{
 	box-shadow: 0 0 1.5rem #438384;
 }
