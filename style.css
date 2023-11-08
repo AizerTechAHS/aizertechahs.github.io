@@ -5,8 +5,7 @@
 	--main-fonts-color: #22ff00;
 /*	--main-decor-color:#377172; */
 	--main-tab-bar-color:#3a3b3a;
-/*    	--main-header-background:#000000; */
-	--main-header-background:#1500ff;
+    	--main-header-background:#000000;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -247,7 +246,8 @@ a.nav-link{
 }
 
 .card .work-content:hover{
-    color:#202020;
+/*    color:#202020; */
+    color:#fa020f;
 }
 
 .Sponsor img{
