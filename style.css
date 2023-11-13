@@ -443,10 +443,10 @@ hr {
 }
 
 /*──────────────────
-      Our Team
+      About Us
 ──────────────────*/
 
-#Team{
+#About{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -456,16 +456,16 @@ hr {
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#Team h3{
+#About h3{
     padding-top: 70px;
 }
-#Team p{
+#About p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
 }
 
-#Team2{
+#About2{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -475,10 +475,10 @@ hr {
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#Team2 h3{
+#About2 h3{
     padding-top: 70px;
 }
-#Team2 p{
+#About2 p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
