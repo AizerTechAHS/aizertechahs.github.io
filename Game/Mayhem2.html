@@ -1,8 +1,49 @@
-<iframe src="https://www.twoplayergames.org/embed/gun-mayhem-2" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-    Your browser doesn't support iframes
-</iframe>
-<title>Mayhem 2</title>
-	<script>
-		// DON'T DELETE THIS!
-            window.onbeforeunload=function() {return false;} // Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page
-	</script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Gun Mayhem 2</title>
+        <link rel="canonical" href="https://www.twoplayergames.org/game/gun-mayhem-2">
+        <link rel="stylesheet" href="https://www.twoplayergames.org/embed/gun-mayhem-2/dist/embed-dd6aecaf.css">
+
+</head>
+<body>
+
+    <div id="game-container">
+<!--
+Direct embed file:
+https://files.twoplayergames.org/files/games/o3/Gun_Mayhem_2.swf
+
+Our beloved CDN:
+tinyurl.com/TPG-CDN
+-->
+        <div id="flash-game"></div>
+
+    </div>
+
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        var ruffle = window.RufflePlayer.newest();
+        var player = ruffle.createPlayer();
+        player.style.width = '100%';
+        player.style.height = '100%';
+        var container = document.getElementById("flash-game");
+        container.appendChild(player);
+        player.load({
+            url: "https://files.twoplayergames.org/files/games/o3/Gun_Mayhem_2.swf",
+            base:"https://files.twoplayergames.org/files/games/o3",
+            openUrlMode: 'deny',
+        });
+        player.splashScreen.style.background = 'rgba(0,0,0,.075)';
+        player.splashScreen.getElementsByClassName('logo')[0].style.display = 'none';
+    });
+</script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+</body>
+</html>
