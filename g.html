@@ -1,0 +1,35 @@
+
+<section class="mbr-section article mbr-section__container" id="content1-1l" style="background-color: rgb(68, 64, 64); padding-top: 20px; padding-bottom: 20px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 lead"><!--<p>input strand text field</p>-->
+                
+                <!--CODE ADDITION-->
+                <textarea name="input" id="input" style="margin-top: 5px;margin-bottom: 5px;text-transform: uppercase;" placeholder="Input Strand" onkeydown="inputcheckdown(event, this, 'convert', true);" onkeyup="inputcheckup(event, this, true);" data-resizable="true"></textarea>
+
+                <center><p class="toggle" style="color:green;font-size:15px;" onclick="togglekeyboard();">Input Keypad <img src="img\keyboard.svg"></p></center>
+
+                <div id="custkeys" align="center" style="font-size: 20px; display: block; font-family: monospace;">
+                <hr style="height:1px; visibility:hidden;">
+                   <a href="javascript:void(0);" id="custkeyA" onclick="document.getElementById('input').value=document.getElementById('input').value+this.innerHTML;document.getElementById('input').scrollLeft=document.getElementById('input').scrollWidth;" class="inputLetters">A</a> <a href="javascript:void(0);" id="custkeyTU" onclick="document.getElementById('input').value=document.getElementById('input').value+this.innerHTML;document.getElementById('input').scrollLeft=document.getElementById('input').scrollWidth;" class="inputLetters">T</a>
+                   <hr style="height:1px; visibility:hidden;">
+                   <a href="javascript:void(0);" id="custkeyG" onclick="document.getElementById('input').value=document.getElementById('input').value+this.innerHTML;document.getElementById('input').scrollLeft=document.getElementById('input').scrollWidth;" class="inputLetters">G</a> <a href="javascript:void(0);" id="custkeyC" onclick="document.getElementById('input').value=document.getElementById('input').value+this.innerHTML;document.getElementById('input').scrollLeft=document.getElementById('input').scrollWidth;" class="inputLetters">C</a>
+                   <hr style="height:1px; visibility:hidden;">
+                </div>
+                <script type="text/javascript">
+                    $(function(){
+                        $('.Output').scroll(function(){
+                            $('.Output').scrollLeft($(this).scrollLeft());    
+                        })
+
+                    });
+                </script>
+
+                <!--CODE ADDITION END-->
+
+            </div>
+        </div>
+    </div>
+
+</section>
