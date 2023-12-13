@@ -1,79 +1,10 @@
-<div class="wrapper clearfix">
-
-    <figure class="gallery-item">
-        <img src="http://placehold.it/300x300">
-        <figcaption class="img-title">
-            <h5>Image Title</h5>    
-        </figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="http://placehold.it/300x300">
-        <figcaption class="img-title">
-            <h5>Image Title</h5>    
-        </figcaption>
-    </figure>
-
-</div>
-<style>
-	/* Uncomment everything commented to CSS for the hide/show */
-
-.gallery {
-    width: 25em;
-    margin: 2em auto;
-}
-
-.gallery-item {
-    height: auto;
-    width: 48.618784527%;
-    float: left;
-    margin-bottom: 2em;
-    position: relative;
-}
-
-    .gallery-item:first-child {
-        margin-right: 2.762430939%;
-    }
-
-.gallery-item img {
-    width: 100%;
-}
-
-.gallery-item:hover .img-title {
-    /*opacity: 1;*/
-}
-
-.img-title {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    /*opacity: 0;*/
-    display: none; /* comment this out for CSS hover */
-    background-color: #333;
-    /*transition: all 0.5s ease;*/
-}
-
-    .img-title h5 {
-        position: absolute;
-        color: #fff;
-        top: 33%;
-        width: 100%;
-        text-align: center;
-    }
-
-
-</style>
-<script>
-	$(document).ready( function() {
-
-    $('.gallery-item').hover( function() {
-        $(this).find('.img-title').fadeIn(300);
-    }, function() {
-        $(this).find('.img-title').fadeOut(100);
-    });
-    
-});
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <h2>Example</h2>
+    <div title="This is a mouseover text!">Hover this text to see the result.</div>
+  </body>
+</html>
