@@ -1,52 +1,108 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<script> src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"</script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+	<meta charset="UTF-8">
+	<title>Collecting Data</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
+	<link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity=
+"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+		crossorigin="anonymous">
+</head>
+
+<body class="container" style="margin-top: 50px;
+	width: 50%; height:auto;">
+	
+	<h2 class="text-primary" style=
+		"margin-left: 15px; margin-bottom: 10px">
+		Hey There,Help Us In Collecting Data
+	</h2>
+	
+	<form class="container" id="contactForm">
+		<div class="card">
+			<div class="card-body">
+				<div class="form-group">
+					<label for="exampleFormControlInput1">
+						Enter Your Name
+					</label>
+					
+					<input type="text" class="form-control"
+					id="name" placeholder="Enter your name">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlInput1">
+						Email address
+					</label>
+					
+					<input type="email" class="form-control"
+					id="email" placeholder="name@example.com">
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary"
+				style="margin-left: 15px; margin-top: 10px">
+				Submit
+			</button>
+		</div>
+	</form>
+
+	<script src=
+"https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+	</script>
+	
+	<script>
+		var firebaseConfig = {
     apiKey: "AIzaSyCmJmjhrJeyv2cyeaS_NfOrtJ040NKZy-U",
     authDomain: "aizertechsignin-77ce5.firebaseapp.com",
+    databaseURL: "https://aizertechsignin-77ce5-default-rtdb.firebaseio.com",
     projectId: "aizertechsignin-77ce5",
     storageBucket: "aizertechsignin-77ce5.appspot.com",
     messagingSenderId: "668030856514",
-    appId: "1:668030856514:web:1805171199d577b0a96cdb",
-    measurementId: "G-EDPQ1LSR5T"
-  };
-  import { getDatabase, ref, set, child, get, update, remove}
-    from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-<style>
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-  }
-</style>
-</head>
+    appId: "1:668030856514:web:677651c2e7349248a96cdb",
+    measurementId: "G-1QB3MET168"
+		};
 
-<body>
-  <div>
-    <h5>Sign Up</h5>
-    <input type="text" placeholder="Fullname" id="nameInp" class="form-control mb-3">
-    <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3">
-    <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
-    <input type="text" placeholder="Password" id="passInp" class="form-control mb-3">
-    <button type="text" id="passInp" class="btn btn-outline-primary mb-3">Sign Up</button>
-  </div>
+		firebase.initializeApp(firebaseConfig);
+
+		var messagesRef = firebase.database()
+			.ref('Collected Data');
+		
+		document.getElementById('contactForm')
+			.addEventListener('submit', submitForm);
+
+		function submitForm(e) {
+			e.preventDefault();
+
+			// Get values
+			var name = getInputVal('name');
+			var email = getInputVal('email');
+
+			saveMessage(name, email);
+			document.getElementById('contactForm').reset();
+		}
+
+		// Function to get form values
+		function getInputVal(id) {
+			return document.getElementById(id).value;
+		}
+
+		// Save message to firebase
+		function saveMessage(name, email) {
+			var newMessageRef = messagesRef.push();
+			newMessageRef.set({
+				name: name,
+				email: email,
+			});
+		}
+	</script>
 </body>
+
+</html>
+
+
+
