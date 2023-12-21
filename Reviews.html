@@ -105,8 +105,8 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 			var name = getInputVal('name');
 			var email = getInputVal('email');
 			var question = getInputVal('question');
-			var question = getInputVal('NoRecommend');
-			var question = getInputVal('YesRecommend');
+			var NoRecommend = getInputVal('NoRecommend');
+			var YesRecommend = getInputVal('YesRecommend');
 
 			saveMessage(name, email, question, NoRecommend, YesRecommend);
 			document.getElementById('contactForm').reset();
