@@ -1,7 +1,29 @@
-<iframe src="https://games.crazygames.com/en_US/awesome-tanks-2/index.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-    Your browser doesn't support iframes
-</iframe>
-	<script>
-		// DON'T DELETE THIS!
-            window.onbeforeunload=function() {return false;} // Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page
-	</script>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+        <link href="https://ubg98.github.io/AwesomeTanks2/styles/main.css" rel="stylesheet">
+        <link href="https://ubg98.github.io/AwesomeTanks2/styles/fonts.css" rel="stylesheet">
+    </head>
+    <body style="overflow:hidden; margin:0; padding:0;">
+        <p style="font-family: 'Gunplay'; position: absolute; pointer-events: none; opacity: 0">Font loader</p>
+        <script>
+            var AT = {
+                // URL where an user will be redirected after clicking "Play" button on the Site lock screen
+                'SITE_LOCK_TARGET': '//www.coolmathgames.com/'
+            };
+
+            var WebFontConfig = {
+                'classes': false,
+                'timeout': 0,
+                'active': function() {},
+                'custom': {'families': ['Gunplay'], 'urls': ['https://ubg98.github.io/AwesomeTanks2/styles/fonts.css']}
+            };
+        </script>
+        <script src="https://ubg98.github.io/AwesomeTanks2/awesome_tanks_2.js"></script>
+      <script src="https://ubg98.github.io/AwesomeTanks2/js/analytics_ubg_v1_4.js"></script>
+      <script src="https://ubg98.github.io/AwesomeTanks2/js/ubg235_client_v1_1.js"></script>
+    </body>
+</html>
