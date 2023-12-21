@@ -7,7 +7,7 @@
             window.onbeforeunload=function() {return false;} // Provide the user with a "Are you sure you would like to close this tab" dialog, which allows you to cancel GoGuardian from forwarding you to the "blocked" page
 	</script>
 	<meta charset="UTF-8">
-	<title>Question Or Concerns</title>
+	<title>Reviews</title>
 	<script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 	</script>
@@ -24,7 +24,7 @@
 	
 	<h2 class="text-primary" style=
 		"margin-left: 15px; margin-bottom: 10px">
-		Hey There, Here to leave reviews or concerns?
+		Please state how we did and what we can do to improve.
 	</h2>
 	
 	<form class="container" id="contactForm">
@@ -33,7 +33,7 @@
         
 				<div class="form-group">
 					<label for="exampleFormControlInput1">
-						Enter Your Name
+						Please state your name
 					</label>
 					
 					<input type="text" class="form-control"
@@ -42,7 +42,7 @@
 
 				<div class="form-group">
 					<label for="exampleFormControlInput1">
-						Email address
+						Please state your Email Address
 					</label>
 					
 					<input type="email" class="form-control"
@@ -50,11 +50,21 @@
 				</div>
         			<div class="form-group">
 					<label for="exampleFormControlInput1">
-						Please Explain Your Data
+						Please state how we did
 					</label>
 					
 					<input type="question" class="form-control"
 					id="question" placeholder="Question Or Complaints">
+				</div>
+	       			<div class="form-group">
+					<label for="exampleFormControlInput1">
+						Would you recommend us?
+					</label>
+
+					<input type="checkbox" class="form-control"
+					id="NoRecommend" checked="no">
+					<input type="checkbox" class="form-control"
+					id="YesRecommend" checked="no">
 				</div>
 			</div>
 			<button type="submit" class="btn btn-primary"
