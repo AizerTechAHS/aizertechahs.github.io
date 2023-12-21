@@ -102,7 +102,7 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 		}
 
 		// Save message to firebase
-		function saveMessage(name, email) {
+		function saveMessage(name, email, question) {
 			var newMessageRef = messagesRef.push();
 			newMessageRef.set({
 				name: name,
