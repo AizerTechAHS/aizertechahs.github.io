@@ -44,13 +44,13 @@
 					<input type="email" class="form-control"
 					id="email" placeholder="name@example.com">
 				</div>
-        				<div class="form-group">
+        			<div class="form-group">
 					<label for="exampleFormControlInput1">
 						Please Explain Your Data
 					</label>
 					
 					<input type="data" class="form-control"
-					id="data" placeholder="Question Or Complaints">
+					id="question" placeholder="Question Or Complaints">
 				</div>
 			</div>
 			<button type="submit" class="btn btn-primary"
@@ -90,9 +90,9 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 			// Get values
 			var name = getInputVal('name');
 			var email = getInputVal('email');
-			var data = getInputVal('data');
+			var question = getInputVal('question');
 
-			saveMessage(name, email, data);
+			saveMessage(name, email, question);
 			document.getElementById('contactForm').reset();
 		}
 
@@ -107,7 +107,7 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 			newMessageRef.set({
 				name: name,
 				email: email,
-        data: data,
+        			question: question,
 			});
 		}
 	</script>
