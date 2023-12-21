@@ -60,11 +60,9 @@
 					<label for="exampleFormControlInput1">
 						Would you recommend us?
 					</label>
-
-					<input type="checkbox" class="form-control"
-					id="NoRecommend" checked="no">
-					<input type="checkbox" class="form-control"
-					id="YesRecommend" checked="no">
+					
+					<input type="recommendation" class="form-control"
+					id="recommendation" placeholder="Yes Or No">
 				</div>
 			</div>
 			<button type="submit" class="btn btn-primary"
@@ -105,10 +103,9 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 			var name = getInputVal('name');
 			var email = getInputVal('email');
 			var question = getInputVal('question');
-			var NoRecommend = getInputVal('NoRecommend');
-			var YesRecommend = getInputVal('YesRecommend');
+			var NoRecommend = getInputVal('recommendation');
 
-			saveMessage(name, email, question, NoRecommend, YesRecommend);
+			saveMessage(name, email, question, recommendation);
 			document.getElementById('contactForm').reset();
 		}
 
@@ -118,14 +115,13 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 		}
 
 		// Save message to firebase
-		function saveMessage(name, email, question, NoRecommend, YesRecommend) {
+		function saveMessage(name, email, question, recommendation) {
 			var newMessageRef = messagesRef.push();
 			newMessageRef.set({
 				name: name,
 				email: email,
         			question: question,
-				NoRecommend: NoRecommend,
-				YesRecommend: YesRecommend,
+				recommendation: recommendation,
 			});
 		}
 	</script>
