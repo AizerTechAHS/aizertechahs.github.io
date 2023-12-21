@@ -26,6 +26,7 @@
 	<form class="container" id="contactForm">
 		<div class="card">
 			<div class="card-body">
+        
 				<div class="form-group">
 					<label for="exampleFormControlInput1">
 						Enter Your Name
@@ -42,6 +43,14 @@
 					
 					<input type="email" class="form-control"
 					id="email" placeholder="name@example.com">
+				</div>
+        			<div class="form-group">
+					<label for="exampleFormControlInput1">
+						Please Explain Your Data
+					</label>
+					
+					<input type="question" class="form-control"
+					id="question" placeholder="Question Or Complaints">
 				</div>
 			</div>
 			<button type="submit" class="btn btn-primary"
@@ -81,8 +90,9 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 			// Get values
 			var name = getInputVal('name');
 			var email = getInputVal('email');
+			var question = getInputVal('question');
 
-			saveMessage(name, email);
+			saveMessage(name, email, question);
 			document.getElementById('contactForm').reset();
 		}
 
@@ -92,17 +102,16 @@ databaseURL: "https://loginaizer-default-rtdb.firebaseio.com",
 		}
 
 		// Save message to firebase
-		function saveMessage(name, email) {
+		function saveMessage(name, email, question) {
 			var newMessageRef = messagesRef.push();
 			newMessageRef.set({
 				name: name,
 				email: email,
+        			question: question,
 			});
 		}
 	</script>
 </body>
 
 </html>
-
-
 
