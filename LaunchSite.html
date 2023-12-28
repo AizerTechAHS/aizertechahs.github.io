@@ -57,22 +57,6 @@
   width: 50%;
     color:#000000;
 }
-/*
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-*/
-
 </style>
 
 </head>
@@ -113,14 +97,14 @@ window.onbeforeunload=function() {return false;}
 
     }
 }
-
+/*
             function openWind() {
                 if ($('#activityCloak').is(':checked')) {
 
                     var url = $("#cloakurl").val() || "http://classroom.google.com";
                     var clasroomwindow = window.open(url, "ActivityCloakWindow");
                 }
-                
+                */
                 
                 var ggwindow = window.open("", "Loading...", "width=1920,height=1080");
 
@@ -145,28 +129,6 @@ window.onbeforeunload=function() {return false;}
                 xmlhttp.send();
                 
             }
-	/*
-            function mainLoop() {
-                setTimeout(function() {
-
-                    // Tab Cloak
-                    if($('#tabCloak').is(':checked')){
-                        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive - Google Drive';document.getElementsByTagName('head')[0].appendChild(link);;
-                    } else {
-                       var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.id='iconlink';link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://aizertechahs.github.io/Images/teamSiteLogo.png';document.title = 'Goguardian Bypasser';document.getElementsByTagName('head')[0].appendChild(link);;
-                    }
-                    
-            }, 50);
-            }
-
-
-            document.onload = mainLoop;
-var modal = document.getElementById("myModal");
-
-modal.style.display = "block";
-
- */
- 
 	</script>
     <div id="debug">
         
